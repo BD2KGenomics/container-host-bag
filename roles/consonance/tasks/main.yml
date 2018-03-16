@@ -1,7 +1,7 @@
 ---
 - name: Get Architecture3 jar file
   # Switch to BD2K fork over Consonance source for reaping fix
-  get_url: url=https://github.com/BD2KGenomics/consonance/releases/download/${consonance_arch_version}/consonance-arch-${consonance_arch_version}.jar
+  get_url: url=https://github.com/BD2KGenomics/consonance/releases/download/${consonance_arch_version}/consonance-arch-${consonance_arch_version}.jar dest=/home/ubuntu/consonance-arch-{{ consonance_arch_version }}.jar
   #get_url: url=https://www.dropbox.com/s/giy9ayxlvpoohiz/consonance-arch-2.0-alpha.11-SNAPSHOT.jar?dl=1 dest=/home/ubuntu/consonance-arch-{{ consonance_arch_version }}.jar
   #get_url: url=https://seqwaremaven.oicr.on.ca/artifactory/simple/seqware-release/io/consonance/consonance-arch/{{ consonance_arch_version }}/consonance-arch-{{ consonance_arch_version }}.jar dest=/home/ubuntu/consonance-arch-{{ consonance_arch_version }}.jar
 
